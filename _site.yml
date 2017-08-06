@@ -1,7 +1,7 @@
 name: "my-website"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "dhbostyn"
   left:
     - text: "Home"
       href: index.html
@@ -9,9 +9,11 @@ navbar:
       href: about.html
     - text: "Research"
       href: research.html
+    - text: "Blog"
+      href: blog.html
 output: 
   html_document:
-    theme: cosmo
+    theme: simplex
     highlight: textmate
     include: 
       after_body: footer.html

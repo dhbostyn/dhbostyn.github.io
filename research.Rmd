@@ -2,6 +2,7 @@
 title: "Research"
 output: html_document
 bibliography: bibliography.bib
+csl: apa.csl
 ---
 
 ---
@@ -11,4 +12,3 @@ nocite: |
 ...
 
 
-#Research
