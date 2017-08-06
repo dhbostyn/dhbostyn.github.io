@@ -1,0 +1,14 @@
+---
+title: "Research"
+output: html_document
+bibliography: bibliography.bib
+---
+
+---
+nocite: |
+  @bostyn2016morality, @van2015defining,@bostyn2016right,
+  @bostyn2017asymmetric, @bostyn2017trust, @haesevoets2017much
+...
+
+
+#Research
