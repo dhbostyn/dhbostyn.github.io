@@ -1,4 +1,5 @@
 name: "my-website"
+output_dir: "."
 navbar:
   title: "My Website"
   left:
@@ -13,4 +14,3 @@ output:
     include: 
       after_body: footer.html
     css: styles.css
-    output_dir: "."
