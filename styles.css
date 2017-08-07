@@ -1,3 +1,25 @@
+.footer{
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+#image_about{
+  float: left;
+}
+
+#about{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#social{
+  float: right;
+}
+
+
 blockquote {
   font-style: italic
 }
@@ -8,8 +30,6 @@ blockquote {
 ::-moz-selection {
   background: #ffb7b7 !important; /* Gecko Browsers */
 }
-
-
 a:link{
     color: #1e64c8 !important;
 }
