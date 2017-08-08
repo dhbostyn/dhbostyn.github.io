@@ -1,19 +1,40 @@
 .footer{
-  position: relative;
+  position: static;
+  bottom: 0;
+  width: 250%;
   overflow: hidden;
   background-color: white;
-  margin-right: -50%;
-  margin-left: -50%;
-  float:bottom; 
+  margin-left: -75%;
+}
+
+#footerhead1{
+  position:static;
+  background-color: white;
+  float:left;
+  margin-left: 25%;
+}
+#footerhead2{
+  position:static;
+  background-color: white;
+  float:left;
+  margin-left: 20.25%;
 }
 
 #image_about{
-  margin-left: 19%;
-  float:left; width:20%;
+  margin-left: 23.75%;
+  float:left; 
+  width:8%;
+  clear: both;
 }
 
 #about{
-  float:left; width:20%;
+  float:left; 
+  width:16%;
+}
+
+#where{
+  float:left; 
+  width:20%;
 }
 
 #social1{

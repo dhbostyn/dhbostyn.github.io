@@ -15,6 +15,7 @@ output:
   html_document:
     theme: simplex
     highlight: textmate
-    include: 
+    include:
       after_body: footer.html
     css: styles.css
+
