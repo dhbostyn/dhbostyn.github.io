@@ -8,7 +8,11 @@ navbar:
     - text: "Publication List"
       href: publications.html
     - text: "My Filedrawer"
-      href: filedrawer.html
+      menu:
+        - text: "Failed Study 1"
+          href: filedrawer1.html
+        - text: "Dissapointing Study 2"
+          href: filedrawer2.html
     - text: "Blog"
       href: blog.html
 output: 

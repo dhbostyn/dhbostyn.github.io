@@ -80,6 +80,21 @@ a:active {
   color: rgb(30,100,200);
 }
 
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:focus,
+.navbar .navbar-nav > .open > a:hover{
+  color: rgb(30,100,200);
+  background-color: #FFFFFF;
+}
+
+.navbar .navbar-nav > .open > .dropdown-menu > li > a:focus,
+.navbar .navbar-nav > .open > .dropdown-menu > li > a:hover{
+  color: rgb(30,100,200);
+  background-color: #FFFFFF;
+}
+
+
+
 blockquote {
   font-style: italic
 }
