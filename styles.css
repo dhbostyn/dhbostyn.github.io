@@ -1,4 +1,8 @@
+
 .footer{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(238,238,238);
   position: static;
   bottom: 0;
   width: 250%;
@@ -17,7 +21,7 @@
   position:static;
   background-color: white;
   float:left;
-  margin-left: 20.25%;
+  margin-left: 22.25%;
 }
 
 #image_about{
@@ -33,7 +37,8 @@
 }
 
 #where{
-  float:left; 
+  float:left;
+  margin-left: 2%;
   width:20%;
 }
 
@@ -45,16 +50,39 @@
   float: right;
 }
 
+a:link {
+    color: rgb(30,100,200);
+}
+
+
+a:visited {
+    color: rgb(30,100,200);
+}
+
+a:hover {
+    color: rgb(251,126,58);
+}
+
+a:active {
+    color: rgb(30,100,200);
+}
+
+.navbar .navbar-nav > li > a:hover {
+  color: rgb(30,100,200);
+}
+
+.navbar .navbar-nav > .active > a ,
+.navbar .navbar-nav > .active > a:hover{
+  color: rgb(30,100,200);
+}
+
+.navbar .navbar-brand:hover{
+  color: rgb(30,100,200);
+}
 
 blockquote {
   font-style: italic
 }
 
-::selection {
-  background: #ffb7b7 !important; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: #ffb7b7 !important; /* Gecko Browsers */
-}
 
 

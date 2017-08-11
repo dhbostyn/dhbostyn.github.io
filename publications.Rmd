@@ -1,0 +1,27 @@
+---
+title: ""
+output: html_document
+---
+
+## First author
+Bostyn, D. H., & Roets, A. (2017). Trust, Trolleys and Social Dilemmas: A Replication Study. *Journal of Experimental Psychology: General*. <a href="https://doi.org/10.1037/xge0000295">doi: 10.1037/xge0000295</a>
+
+Bostyn, D. H., & Roets, A. (2017). An asymmetric moral conformity effect: subjects conform to deontological but not consequentialist majorities. *Social Psychological and Personality Science*. <a href="https://doi.org/10.1177/1948550616671999">doi: 10.1177/1948550616671999</a>
+
+Bostyn, D. H., & Roets, A. (2016). The morality of action: The assymmetry between judgments of praise and blame in the action-omission effect. *Journal of Experimental Social Psychology*, 63, 19-25. <a href="https://doi.org/10.1016/j.jesp.2015.11.005">doi: 10.1016/j.jesp.2015.11.005</a>
+
+Bostyn, D. H., Roets, A, & Van Hiel A. (2016). Right-wing attitudes and moral cognition: are Right-Wing Authoritarianism and social dominance Orientation related to utilitarian Judgement? *Personality and Individual differences*, 96, 164-171. <a href="https://doi.org/10.1016/j.paid.2016.03.006">doi: 10.1016/j.paid.2016.03.006</a>
+
+
+## Co-author
+Van Assche, J., Bostyn, D.H., De keersmaecker, J., Dardenne, B., & Hansenne, M. (in Press). Intergroup reconciliation between Flemmings and Walloons: The predictive value of cognitive style, authoritarian ideology, and intergroup emotions. *Psychologica Belgica*. 
+
+De keersmaecker, J., Bostyn, D.H., Fontaine, J.R.J., Van Hiel, A., & Roets, A. (Online First). Towards an integrated cognition perspective on ethnic prejudice: An investigation into the role of intelligence and need for cognitive closure. *Social Psychology and Personality Science*. <a href="https://doi.org/10.1177/1948550617722201">doi: 10.1177/1948550617722201</a>
+
+Haesevoets, T.,  Van Hiel, A., Pandelaere M., Bostyn, D.H., & De Cremer, D. (2017). How much compensation is too much? An investigation of the effectiveness of financial overcompensation as a means to enhance customer loyalty. *Judgment and Decision Making*, 12(2). p.183-197. <a href="http://journal.sjdm.org/16/16929/jdm16929.html">link</a>
+
+Van Hiel, A. Roets, A., Van Assche, J., Bostyn, D.H., De keersmaecker, J., Haesevoets, T. Joosten, A., Stadeaus, J., & Onraet, E. (2015). Defining the happiness gap. *Science*, 348, 1216-1216. <a href="https://doi.org/10.1126/science.348.6240.1216-a">doi: 10.1126/science.348.6240.1216-a</a>
+ 
+
+
+<p style="font-size:75%;">last updated: 11th August 2017<p>

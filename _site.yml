@@ -5,10 +5,10 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "Research"
-      href: research.html
+    - text: "Publication List"
+      href: publications.html
+    - text: "My Filedrawer"
+      href: filedrawer.html
     - text: "Blog"
       href: blog.html
 output: 
@@ -17,5 +17,5 @@ output:
     highlight: textmate
     include:
       after_body: footer.html
-    css: styles.css
+    css: ["styles.css","site_libs/academicons-1.8.0/css/academicons.css","site_libs/font-awesome-4.5.0/css/font-awesome.min.css"]
 
