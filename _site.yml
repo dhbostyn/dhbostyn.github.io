@@ -13,8 +13,10 @@ navbar:
           href: filedrawer1.html
         - text: "Dissapointing Study 2"
           href: filedrawer2.html
-    - text: "Blog"
-      href: blog.html
+    - text: "Fun Stats"
+      menu:
+        - text: "Life Expectancy, then and now"
+          href: Global_Life_Expectancy.html
 output: 
   html_document:
     theme: simplex

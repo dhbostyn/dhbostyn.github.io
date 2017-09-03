@@ -1,0 +1,65 @@
+---
+title: ""
+---
+
+####Life Expectancy, then and now
+
+As an amateur statistician, I'm a big fan of the late Hans R&ouml;sling and by extension: [GapMinder](https://www.gapminder.org/). If you're not familiar with their work: they essentially aim to update how view the world through the visual communication of statistics. As a great example, check out this great little tidbit from a [BBC show](https://www.youtube.com/watch?v=jbkSRLYSojo). As it turns out, much of what we think we know about the world is outdated and no longer reflects the current state of affairs. As it also turns out: by alot of metrics, our world has improved tremendously. It's a positive and hopeful message that we tend to forget due to our daily exposure to the cynism of mass media. 
+
+I also enjoy messing around with new R packages and data visualization. A while ago, I stumbled upon the [rMaps](http://rmaps.github.io/ pacakge). Although, it seems that the package hasn't been updated in a while, it still provides some very interesting functionality that could be used to visualize some of the amazing data provided by Gapminder. More specifcally, it can be used to create animated world maps, and I figured it would be an interesting way to plot how global life expectancy has changed from 1850 to very recently.
+
+the rMaps package is not (yet?) available through CRAN but it can be easily downloaded through github and thus through the "devtools" package.
+
+```{r, message=FALSE, warning=FALSE}
+library(devtools)
+install_github('ramnathv/rCharts@dev')
+install_github('ramnathv/rMaps')
+
+library(rCharts)
+library(rMaps)
+```
+
+Gapminder also provides the data they use for their analyses freely on their website. You can download it in a number of ways but they also provide their data through googledocs which we can extract through the "googlesheets" package with some "dplyr" magic. We will also need the "reshape2" package later on, so we might as well just load it immediately.
+
+
+```{r, message=FALSE, warning=FALSE}
+library(googlesheets)
+library(dplyr)
+library(rCharts)
+library(reshape2)
+```
+
+The googlesheets package allows us to extract data from googlesheets through the key that is associated with each document. In this case, we want to extract Gapminder's life expectancy data which we can find in this [sheet](https://docs.google.com/spreadsheets/d/1B89xX-0BdNR-qjM7_s5tZi2WCCmobejXd4RaMFKxAIw/). The key we need is just there in the url and fits into the googlesheets 'gs_key'. We can also chain the 'gs_key' with the 'gs_read' function to extract the data we need like so:
+
+```{r, message=FALSE, warning=FALSE, results='hide'}
+#Grabbing the data from gapminder
+life_exp <- gs_key("1B89xX-0BdNR-qjM7_s5tZi2WCCmobejXd4RaMFKxAIw", lookup = FALSE,  verbose=FALSE) %>% 
+            gs_read(ws = "Data", check.names=FALSE)
+```
+
+For a few countries, Gapminder actually has managed to find life expectancy data from the year 1765 and upwards, but frankly speaking: the data is still really sparse at that point. Changes to life expectancy also really only start to happen from 1850  onwards. As such, we subset the data. While we're at it, the data we have is in [wide format](http://www.cookbook-r.com/Manipulating_data/Converting_data_between_wide_and_long_format/) and the rMaps package needs the data to be in long format. The reshape2 package allows us to easily 'melt' our data by specifying which variable groups the individual measurements. 
+
+```{r, message=FALSE, warning=FALSE, results='hide'}
+#Subsetting the data to start from 1850
+life_exp <-life_exp[,c(1,87:255)]
+
+#Renaming the country-ID variable to something that makes actual sense
+colnames(life_exp)[1] <-"Country"
+
+#Melting the data into a long format
+life_exp_long <- melt(life_exp, id.var = "Country")
+```
+
+We are aiming to create a map of the entire world in which each country is color coded according to its life expectancy for a given year. This is a categorical way of displaying our data and thus we need to categorize the life expectancy data into discrete chunks. The rMaps package could take care of that, but it might be better if we do it so we could split the data into intuitive categories. 
+
+```{r, message=FALSE, warning=FALSE, results='hide'}
+#Categorizing the data
+life_exp_long$Color <- "A"
+life_exp_long$Color[life_exp_long$value < 70] <- "B"
+life_exp_long$Color[life_exp_long$value < 60] <- "C"
+life_exp_long$Color[life_exp_long$value < 40] <- "D"
+life_exp_long$Color[life_exp_long$value < 50] <- "E"
+life_exp_long$Color[life_exp_long$value < 40] <- "F"
+life_exp_long$Color[life_exp_long$value < 30] <- "G"
+life_exp_long$Color[is.na(life_exp_long$value)] <- NA
+```

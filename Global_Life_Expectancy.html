@@ -22,7 +22,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -228,15 +227,37 @@ $(document).ready(function () {
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-</div>
-<div id="lorem-ipsum" class="section level2">
-<h2>Lorem Ipsum</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<div id="life-expectancy-then-and-now" class="section level4">
+<h4>Life Expectancy, then and now</h4>
+<p>As an amateur statistician, I’m a big fan of the late Hans Rösling and by extension: <a href="https://www.gapminder.org/">GapMinder</a>. If you’re not familiar with their work: they essentially aim to update how view the world through the visual communication of statistics. As a great example, check out this great little tidbit from a <a href="https://www.youtube.com/watch?v=jbkSRLYSojo">BBC show</a>. As it turns out, much of what we think we know about the world is outdated and no longer reflects the current state of affairs. As it also turns out: by alot of metrics, our world has improved tremendously. It’s a positive and hopeful message that we tend to forget due to our daily exposure to the cynism of mass media.</p>
+<p>I also enjoy messing around with new R packages and data visualization. A while ago, I stumbled upon the <a href="http://rmaps.github.io/%20pacakge">rMaps</a>. Although, it seems that the package hasn’t been updated in a while, it still provides some very interesting functionality that could be used to visualize some of the amazing data provided by Gapminder. More specifcally, it can be used to create animated world maps, and I figured it would be an interesting way to plot how global life expectancy has changed from 1850 to very recently.</p>
+<p>the rMaps package is not (yet?) available through CRAN but it can be easily downloaded through github and thus through the “devtools” package.  </p>
+<pre class="r"><code>library(devtools)
+install_github(&#39;ramnathv/rCharts@dev&#39;)
+install_github(&#39;ramnathv/rMaps&#39;)
+
+library(rCharts)
+library(rMaps)</code></pre>
+<p> </p>
+<p>Gapminder also provides the data they use for their analyses freely on their website. You can download it in a number of ways but they also provide their data through googledocs which we can extract through the “googlesheets” package with some “dplyr” magic. We will also need the “reshape2” package later on, so we might as well just load it immediately.</p>
+<pre class="r"><code>library(googlesheets)
+library(dplyr)
+library(rCharts)
+library(reshape2)</code></pre>
+<p>The googlesheets package allows us to extract data from googlesheets through the key that is associated with each document. In this case, we want to extract Gapminder’s life expectancy data which we can find in this <a href="https://docs.google.com/spreadsheets/d/1B89xX-0BdNR-qjM7_s5tZi2WCCmobejXd4RaMFKxAIw/">sheet</a>. The key we need is just there in the url and fits into the googlesheets ‘gs_key’. We can also chain the ‘gs_key’ with the ‘gs_read’ function to extract the data we need like so:</p>
+<pre class="r"><code>#Grabbing the data from gapminder
+life_exp &lt;- gs_key(&quot;1B89xX-0BdNR-qjM7_s5tZi2WCCmobejXd4RaMFKxAIw&quot;, lookup = FALSE,  verbose=FALSE) %&gt;% 
+            gs_read(ws = &quot;Data&quot;, check.names=FALSE)</code></pre>
+<p>For a few countries, Gapminder actually has managed to find life expectancy data from the year 1765 and upwards, but frankly speaking: the data is still really sparse at that point. Changes to life expectancy also really only start to happen from 1850 onwards. As such, we subset the data. While we’re at it, the data we have is in <a href="http://www.cookbook-r.com/Manipulating_data/Converting_data_between_wide_and_long_format/">wide format</a> and the rMaps package needs the data to be in long format. The reshape2 package allows us to easily ‘melt’ our data by specifying which variable groups the individual measurements.</p>
+<pre class="r"><code>#Subsetting the data to start from 1850
+life_exp &lt;-life_exp[,c(1,87:255)]
+
+#Renaming the country-ID variable to something that makes actual sense
+colnames(life_exp)[1] &lt;-&quot;Country&quot;
+
+#Melting the data into a long format
+life_exp_long &lt;- melt(life_exp, id.var = &quot;Country&quot;)</code></pre>
+<p>We need to do a bit more prep-work before plotting our data…</p>
 </div>
 
 
