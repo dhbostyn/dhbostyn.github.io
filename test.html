@@ -1,0 +1,1493 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/topojson.v1.min.js' type='text/javascript'></script>
+    <script src='http://datamaps.github.io/scripts/datamaps.all.min.js' type='text/javascript'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart1ab83ae616c7' class = 'rChart datamaps'></div>    
+    <script id='popup-template' type='text/x-handlebars-template'>
+    
+</script>
+<script>
+  var chartParams = {
+ "dom": "chart1ab83ae616c7",
+"width":    800,
+"height":    400,
+"scope": "world",
+"fills": {
+ "(38.1,51.5]": "#D73027",
+"(51.5,60.4]": "#F46D43",
+"(60.4,67]": "#FDAE61",
+"(67,70.5]": "#FEE08B",
+"(70.5,72.2]": "#D9EF8B",
+"(72.2,74.6]": "#A6D96A",
+"(74.6,77.6]": "#66BD63",
+"(77.6,81.3]": "#1A9850" 
+},
+"legend": true,
+"labels": false,
+"data": {
+ "ABW": {
+ "Country": [ "Aruba" ],
+"variable": [ "2000" ],
+"value": [ 73.783 ],
+"Code": [ "ABW" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"AFG": {
+ "Country": [ "Afghanistan" ],
+"variable": [ "2000" ],
+"value": [ 54.863 ],
+"Code": [ "AFG" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"AGO": {
+ "Country": [ "Angola" ],
+"variable": [ "2000" ],
+"value": [ 45.234 ],
+"Code": [ "AGO" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"ALB": {
+ "Country": [ "Albania" ],
+"variable": [ "2000" ],
+"value": [   74.2 ],
+"Code": [ "ALB" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"ANT": {
+ "Country": [ "Netherlands Antilles" ],
+"variable": [ "2000" ],
+"value": [ 74.648 ],
+"Code": [ "ANT" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"ARE": {
+ "Country": [ "United Arab Emirates" ],
+"variable": [ "2000" ],
+"value": [ 74.163 ],
+"Code": [ "ARE" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"ARG": {
+ "Country": [ "Argentina" ],
+"variable": [ "2000" ],
+"value": [ 73.822 ],
+"Code": [ "ARG" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"ARM": {
+ "Country": [ "Armenia" ],
+"variable": [ "2000" ],
+"value": [ 71.494 ],
+"Code": [ "ARM" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"ATG": {
+ "Country": [ "Antigua and Barbuda" ],
+"variable": [ "2000" ],
+"value": [ 73.544 ],
+"Code": [ "ATG" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"AUS": {
+ "Country": [ "Australia" ],
+"variable": [ "2000" ],
+"value": [  79.93 ],
+"Code": [ "AUS" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"AUT": {
+ "Country": [ "Austria" ],
+"variable": [ "2000" ],
+"value": [  78.33 ],
+"Code": [ "AUT" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"AZE": {
+ "Country": [ "Azerbaijan" ],
+"variable": [ "2000" ],
+"value": [ 66.851 ],
+"Code": [ "AZE" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"BDI": {
+ "Country": [ "Burundi" ],
+"variable": [ "2000" ],
+"value": [ 48.251 ],
+"Code": [ "BDI" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"BEL": {
+ "Country": [ "Belgium" ],
+"variable": [ "2000" ],
+"value": [  77.91 ],
+"Code": [ "BEL" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"BEN": {
+ "Country": [ "Benin" ],
+"variable": [ "2000" ],
+"value": [ 55.261 ],
+"Code": [ "BEN" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"BFA": {
+ "Country": [ "Burkina Faso" ],
+"variable": [ "2000" ],
+"value": [ 50.589 ],
+"Code": [ "BFA" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"BGD": {
+ "Country": [ "Bangladesh" ],
+"variable": [ "2000" ],
+"value": [ 65.309 ],
+"Code": [ "BGD" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"BGR": {
+ "Country": [ "Bulgaria" ],
+"variable": [ "2000" ],
+"value": [  71.59 ],
+"Code": [ "BGR" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"BHR": {
+ "Country": [ "Bahrain" ],
+"variable": [ "2000" ],
+"value": [ 74.497 ],
+"Code": [ "BHR" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"BHS": {
+ "Country": [ "Bahamas" ],
+"variable": [ "2000" ],
+"value": [  72.37 ],
+"Code": [ "BHS" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"BIH": {
+ "Country": [ "Bosnia and Herzegovina" ],
+"variable": [ "2000" ],
+"value": [ 74.882 ],
+"Code": [ "BIH" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"BLR": {
+ "Country": [ "Belarus" ],
+"variable": [ "2000" ],
+"value": [  68.99 ],
+"Code": [ "BLR" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"BLZ": {
+ "Country": [ "Belize" ],
+"variable": [ "2000" ],
+"value": [ 70.425 ],
+"Code": [ "BLZ" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"BOL": {
+ "Country": [ "Bolivia" ],
+"variable": [ "2000" ],
+"value": [ 62.994 ],
+"Code": [ "BOL" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"BRA": {
+ "Country": [ "Brazil" ],
+"variable": [ "2000" ],
+"value": [ 70.261 ],
+"Code": [ "BRA" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"BRB": {
+ "Country": [ "Barbados" ],
+"variable": [ "2000" ],
+"value": [ 73.118 ],
+"Code": [ "BRB" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"BRN": {
+ "Country": [ "Brunei" ],
+"variable": [ "2000" ],
+"value": [ 75.927 ],
+"Code": [ "BRN" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"BTN": {
+ "Country": [ "Bhutan" ],
+"variable": [ "2000" ],
+"value": [ 60.307 ],
+"Code": [ "BTN" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"BWA": {
+ "Country": [ "Botswana" ],
+"variable": [ "2000" ],
+"value": [ 50.567 ],
+"Code": [ "BWA" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"CAF": {
+ "Country": [ "Central African Rep." ],
+"variable": [ "2000" ],
+"value": [ 43.727 ],
+"Code": [ "CAF" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"CAN": {
+ "Country": [ "Canada" ],
+"variable": [ "2000" ],
+"value": [  79.41 ],
+"Code": [ "CAN" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"CHE": {
+ "Country": [ "Switzerland" ],
+"variable": [ "2000" ],
+"value": [  79.99 ],
+"Code": [ "CHE" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"CHL": {
+ "Country": [ "Chile" ],
+"variable": [ "2000" ],
+"value": [  77.01 ],
+"Code": [ "CHL" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"CHN": {
+ "Country": [ "China" ],
+"variable": [ "2000" ],
+"value": [ 72.124 ],
+"Code": [ "CHN" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"CIV": {
+ "Country": [ "Cote d'Ivoire" ],
+"variable": [ "2000" ],
+"value": [ 46.429 ],
+"Code": [ "CIV" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"CMR": {
+ "Country": [ "Cameroon" ],
+"variable": [ "2000" ],
+"value": [  51.96 ],
+"Code": [ "CMR" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"COD": {
+ "Country": [ "Congo, Dem. Rep." ],
+"variable": [ "2000" ],
+"value": [ 46.387 ],
+"Code": [ "COD" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"COG": {
+ "Country": [ "Congo, Rep." ],
+"variable": [ "2000" ],
+"value": [ 52.326 ],
+"Code": [ "COG" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"COL": {
+ "Country": [ "Colombia" ],
+"variable": [ "2000" ],
+"value": [ 71.026 ],
+"Code": [ "COL" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"COM": {
+ "Country": [ "Comoros" ],
+"variable": [ "2000" ],
+"value": [   57.9 ],
+"Code": [ "COM" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"CPV": {
+ "Country": [ "Cape Verde" ],
+"variable": [ "2000" ],
+"value": [ 69.835 ],
+"Code": [ "CPV" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"CRI": {
+ "Country": [ "Costa Rica" ],
+"variable": [ "2000" ],
+"value": [ 77.721 ],
+"Code": [ "CRI" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"CUB": {
+ "Country": [ "Cuba" ],
+"variable": [ "2000" ],
+"value": [ 76.684 ],
+"Code": [ "CUB" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"CYP": {
+ "Country": [ "Cyprus" ],
+"variable": [ "2000" ],
+"value": [ 78.011 ],
+"Code": [ "CYP" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"CZE": {
+ "Country": [ "Czech Rep." ],
+"variable": [ "2000" ],
+"value": [  75.05 ],
+"Code": [ "CZE" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"DEU": {
+ "Country": [ "Germany" ],
+"variable": [ "2000" ],
+"value": [ 78.141 ],
+"Code": [ "DEU" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"DJI": {
+ "Country": [ "Djibouti" ],
+"variable": [ "2000" ],
+"value": [ 57.023 ],
+"Code": [ "DJI" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"DNK": {
+ "Country": [ "Denmark" ],
+"variable": [ "2000" ],
+"value": [   76.9 ],
+"Code": [ "DNK" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"DOM": {
+ "Country": [ "Dominican Rep." ],
+"variable": [ "2000" ],
+"value": [ 70.553 ],
+"Code": [ "DOM" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"DZA": {
+ "Country": [ "Algeria" ],
+"variable": [ "2000" ],
+"value": [ 68.963 ],
+"Code": [ "DZA" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"ECU": {
+ "Country": [ "Ecuador" ],
+"variable": [ "2000" ],
+"value": [ 73.353 ],
+"Code": [ "ECU" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"EGY": {
+ "Country": [ "Egypt" ],
+"variable": [ "2000" ],
+"value": [ 68.632 ],
+"Code": [ "EGY" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"ERI": {
+ "Country": [ "Eritrea" ],
+"variable": [ "2000" ],
+"value": [ 56.131 ],
+"Code": [ "ERI" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"ESH": {
+ "Country": [ "Western Sahara" ],
+"variable": [ "2000" ],
+"value": [ 62.636 ],
+"Code": [ "ESH" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"ESP": {
+ "Country": [ "Spain" ],
+"variable": [ "2000" ],
+"value": [  79.34 ],
+"Code": [ "ESP" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"EST": {
+ "Country": [ "Estonia" ],
+"variable": [ "2000" ],
+"value": [   70.8 ],
+"Code": [ "EST" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"ETH": {
+ "Country": [ "Ethiopia" ],
+"variable": [ "2000" ],
+"value": [ 52.245 ],
+"Code": [ "ETH" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"FIN": {
+ "Country": [ "Finland" ],
+"variable": [ "2000" ],
+"value": [  77.76 ],
+"Code": [ "FIN" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"FJI": {
+ "Country": [ "Fiji" ],
+"variable": [ "2000" ],
+"value": [ 67.553 ],
+"Code": [ "FJI" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"FRA": {
+ "Country": [ "France" ],
+"variable": [ "2000" ],
+"value": [  79.23 ],
+"Code": [ "FRA" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"FSM": {
+ "Country": [ "Micronesia, Fed. Sts." ],
+"variable": [ "2000" ],
+"value": [   67.3 ],
+"Code": [ "FSM" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"GAB": {
+ "Country": [ "Gabon" ],
+"variable": [ "2000" ],
+"value": [ 59.744 ],
+"Code": [ "GAB" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"GBR": {
+ "Country": [ "United Kingdom" ],
+"variable": [ "2000" ],
+"value": [  78.04 ],
+"Code": [ "GBR" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"GEO": {
+ "Country": [ "Georgia" ],
+"variable": [ "2000" ],
+"value": [ 71.839 ],
+"Code": [ "GEO" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"GHA": {
+ "Country": [ "Ghana" ],
+"variable": [ "2000" ],
+"value": [ 56.996 ],
+"Code": [ "GHA" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"GIN": {
+ "Country": [ "Guinea" ],
+"variable": [ "2000" ],
+"value": [ 51.257 ],
+"Code": [ "GIN" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"GLP": {
+ "Country": [ "Guadeloupe" ],
+"variable": [ "2000" ],
+"value": [ 77.116 ],
+"Code": [ "GLP" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"GMB": {
+ "Country": [ "Gambia" ],
+"variable": [ "2000" ],
+"value": [ 55.115 ],
+"Code": [ "GMB" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"GNB": {
+ "Country": [ "Guinea-Bissau" ],
+"variable": [ "2000" ],
+"value": [ 51.468 ],
+"Code": [ "GNB" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"GNQ": {
+ "Country": [ "Equatorial Guinea" ],
+"variable": [ "2000" ],
+"value": [ 47.723 ],
+"Code": [ "GNQ" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"GRC": {
+ "Country": [ "Greece" ],
+"variable": [ "2000" ],
+"value": [ 78.535 ],
+"Code": [ "GRC" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"GRD": {
+ "Country": [ "Grenada" ],
+"variable": [ "2000" ],
+"value": [ 70.341 ],
+"Code": [ "GRD" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"GRL": {
+ "Country": [ "Greenland" ],
+"variable": [ "2000" ],
+"value": [  67.03 ],
+"Code": [ "GRL" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"GTM": {
+ "Country": [ "Guatemala" ],
+"variable": [ "2000" ],
+"value": [ 67.768 ],
+"Code": [ "GTM" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"GUF": {
+ "Country": [ "French Guiana" ],
+"variable": [ "2000" ],
+"value": [ 74.745 ],
+"Code": [ "GUF" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"GUM": {
+ "Country": [ "Guam" ],
+"variable": [ "2000" ],
+"value": [ 75.011 ],
+"Code": [ "GUM" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"GUY": {
+ "Country": [ "Guyana" ],
+"variable": [ "2000" ],
+"value": [  63.29 ],
+"Code": [ "GUY" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"HKG": {
+ "Country": [ "Hong Kong, China" ],
+"variable": [ "2000" ],
+"value": [ 80.361 ],
+"Code": [ "HKG" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"HND": {
+ "Country": [ "Honduras" ],
+"variable": [ "2000" ],
+"value": [ 70.482 ],
+"Code": [ "HND" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"HRV": {
+ "Country": [ "Croatia" ],
+"variable": [ "2000" ],
+"value": [ 74.798 ],
+"Code": [ "HRV" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"HTI": {
+ "Country": [ "Haiti" ],
+"variable": [ "2000" ],
+"value": [  57.46 ],
+"Code": [ "HTI" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"HUN": {
+ "Country": [ "Hungary" ],
+"variable": [ "2000" ],
+"value": [  71.86 ],
+"Code": [ "HUN" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"IDN": {
+ "Country": [ "Indonesia" ],
+"variable": [ "2000" ],
+"value": [ 67.289 ],
+"Code": [ "IDN" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"IND": {
+ "Country": [ "India" ],
+"variable": [ "2000" ],
+"value": [ 62.129 ],
+"Code": [ "IND" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"IRL": {
+ "Country": [ "Ireland" ],
+"variable": [ "2000" ],
+"value": [  76.66 ],
+"Code": [ "IRL" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"IRN": {
+ "Country": [ "Iran" ],
+"variable": [ "2000" ],
+"value": [ 69.611 ],
+"Code": [ "IRN" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"IRQ": {
+ "Country": [ "Iraq" ],
+"variable": [ "2000" ],
+"value": [ 70.845 ],
+"Code": [ "IRQ" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"ISL": {
+ "Country": [ "Iceland" ],
+"variable": [ "2000" ],
+"value": [  79.72 ],
+"Code": [ "ISL" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"ISR": {
+ "Country": [ "Israel" ],
+"variable": [ "2000" ],
+"value": [  78.75 ],
+"Code": [ "ISR" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"ITA": {
+ "Country": [ "Italy" ],
+"variable": [ "2000" ],
+"value": [  79.73 ],
+"Code": [ "ITA" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"JAM": {
+ "Country": [ "Jamaica" ],
+"variable": [ "2000" ],
+"value": [ 70.479 ],
+"Code": [ "JAM" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"JOR": {
+ "Country": [ "Jordan" ],
+"variable": [ "2000" ],
+"value": [ 71.724 ],
+"Code": [ "JOR" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"JPN": {
+ "Country": [ "Japan" ],
+"variable": [ "2000" ],
+"value": [  81.35 ],
+"Code": [ "JPN" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"KAZ": {
+ "Country": [ "Kazakhstan" ],
+"variable": [ "2000" ],
+"value": [ 63.513 ],
+"Code": [ "KAZ" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"KEN": {
+ "Country": [ "Kenya" ],
+"variable": [ "2000" ],
+"value": [ 52.864 ],
+"Code": [ "KEN" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"KGZ": {
+ "Country": [ "Kyrgyzstan" ],
+"variable": [ "2000" ],
+"value": [ 66.232 ],
+"Code": [ "KGZ" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"KHM": {
+ "Country": [ "Cambodia" ],
+"variable": [ "2000" ],
+"value": [  62.03 ],
+"Code": [ "KHM" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"KIR": {
+ "Country": [ "Kiribati" ],
+"variable": [ "2000" ],
+"value": [ 64.642 ],
+"Code": [ "KIR" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"KOR": {
+ "Country": [ "Korea, Dem. Rep.", "Korea, Rep." ],
+"variable": [ "2000", "2000" ],
+"value": [ 65.271, 76.114 ],
+"Code": [ "KOR", "KOR" ],
+"fillKey": [ "(60.4,67]", "(74.6,77.6]" ] 
+},
+"KWT": {
+ "Country": [ "Kuwait" ],
+"variable": [ "2000" ],
+"value": [ 73.133 ],
+"Code": [ "KWT" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"LAO": {
+ "Country": [ "Laos" ],
+"variable": [ "2000" ],
+"value": [ 61.689 ],
+"Code": [ "LAO" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"LBN": {
+ "Country": [ "Lebanon" ],
+"variable": [ "2000" ],
+"value": [ 74.409 ],
+"Code": [ "LBN" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"LBR": {
+ "Country": [ "Liberia" ],
+"variable": [ "2000" ],
+"value": [ 52.424 ],
+"Code": [ "LBR" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"LBY": {
+ "Country": [ "Libya" ],
+"variable": [ "2000" ],
+"value": [ 71.872 ],
+"Code": [ "LBY" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"LCA": {
+ "Country": [ "Saint Lucia" ],
+"variable": [ "2000" ],
+"value": [ 71.456 ],
+"Code": [ "LCA" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"LKA": {
+ "Country": [ "Sri Lanka" ],
+"variable": [ "2000" ],
+"value": [ 71.078 ],
+"Code": [ "LKA" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"LSO": {
+ "Country": [ "Lesotho" ],
+"variable": [ "2000" ],
+"value": [ 47.265 ],
+"Code": [ "LSO" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"LTU": {
+ "Country": [ "Lithuania" ],
+"variable": [ "2000" ],
+"value": [  72.18 ],
+"Code": [ "LTU" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"LUX": {
+ "Country": [ "Luxembourg" ],
+"variable": [ "2000" ],
+"value": [  77.82 ],
+"Code": [ "LUX" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"LVA": {
+ "Country": [ "Latvia" ],
+"variable": [ "2000" ],
+"value": [  70.16 ],
+"Code": [ "LVA" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"MAC": {
+ "Country": [ "Macao, China" ],
+"variable": [ "2000" ],
+"value": [ 77.627 ],
+"Code": [ "MAC" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"MAR": {
+ "Country": [ "Morocco" ],
+"variable": [ "2000" ],
+"value": [  68.22 ],
+"Code": [ "MAR" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"MDA": {
+ "Country": [ "Moldova" ],
+"variable": [ "2000" ],
+"value": [ 67.007 ],
+"Code": [ "MDA" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"MDG": {
+ "Country": [ "Madagascar" ],
+"variable": [ "2000" ],
+"value": [ 58.485 ],
+"Code": [ "MDG" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"MDV": {
+ "Country": [ "Maldives" ],
+"variable": [ "2000" ],
+"value": [ 69.279 ],
+"Code": [ "MDV" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"MEX": {
+ "Country": [ "Mexico" ],
+"variable": [ "2000" ],
+"value": [  74.38 ],
+"Code": [ "MEX" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"MKD": {
+ "Country": [ "Macedonia, FYR" ],
+"variable": [ "2000" ],
+"value": [ 73.244 ],
+"Code": [ "MKD" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"MLI": {
+ "Country": [ "Mali" ],
+"variable": [ "2000" ],
+"value": [ 49.061 ],
+"Code": [ "MLI" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"MLT": {
+ "Country": [ "Malta" ],
+"variable": [ "2000" ],
+"value": [ 77.364 ],
+"Code": [ "MLT" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"MMR": {
+ "Country": [ "Myanmar" ],
+"variable": [ "2000" ],
+"value": [ 62.073 ],
+"Code": [ "MMR" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"MNE": {
+ "Country": [ "Montenegro" ],
+"variable": [ "2000" ],
+"value": [ 74.125 ],
+"Code": [ "MNE" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"MNG": {
+ "Country": [ "Mongolia" ],
+"variable": [ "2000" ],
+"value": [ 62.876 ],
+"Code": [ "MNG" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"MOZ": {
+ "Country": [ "Mozambique" ],
+"variable": [ "2000" ],
+"value": [ 47.472 ],
+"Code": [ "MOZ" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"MRT": {
+ "Country": [ "Mauritania" ],
+"variable": [ "2000" ],
+"value": [ 59.729 ],
+"Code": [ "MRT" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"MTQ": {
+ "Country": [ "Martinique" ],
+"variable": [ "2000" ],
+"value": [ 78.191 ],
+"Code": [ "MTQ" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"MUS": {
+ "Country": [ "Mauritius" ],
+"variable": [ "2000" ],
+"value": [ 71.202 ],
+"Code": [ "MUS" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"MWI": {
+ "Country": [ "Malawi" ],
+"variable": [ "2000" ],
+"value": [  46.04 ],
+"Code": [ "MWI" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"MYS": {
+ "Country": [ "Malaysia" ],
+"variable": [ "2000" ],
+"value": [  72.81 ],
+"Code": [ "MYS" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"MYT": {
+ "Country": [ "Mayotte" ],
+"variable": [ "2000" ],
+"value": [ 75.687 ],
+"Code": [ "MYT" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"NAM": {
+ "Country": [ "Namibia" ],
+"variable": [ "2000" ],
+"value": [ 55.173 ],
+"Code": [ "NAM" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"NCL": {
+ "Country": [ "New Caledonia" ],
+"variable": [ "2000" ],
+"value": [ 73.457 ],
+"Code": [ "NCL" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"NER": {
+ "Country": [ "Niger" ],
+"variable": [ "2000" ],
+"value": [ 50.692 ],
+"Code": [ "NER" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"NGA": {
+ "Country": [ "Nigeria" ],
+"variable": [ "2000" ],
+"value": [ 46.629 ],
+"Code": [ "NGA" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"NIC": {
+ "Country": [ "Nicaragua" ],
+"variable": [ "2000" ],
+"value": [ 69.682 ],
+"Code": [ "NIC" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"NLD": {
+ "Country": [ "Netherlands" ],
+"variable": [ "2000" ],
+"value": [  78.24 ],
+"Code": [ "NLD" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"NOR": {
+ "Country": [ "Norway" ],
+"variable": [ "2000" ],
+"value": [  78.76 ],
+"Code": [ "NOR" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"NPL": {
+ "Country": [ "Nepal" ],
+"variable": [ "2000" ],
+"value": [ 62.055 ],
+"Code": [ "NPL" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"NZL": {
+ "Country": [ "New Zealand" ],
+"variable": [ "2000" ],
+"value": [   78.9 ],
+"Code": [ "NZL" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"OMN": {
+ "Country": [ "Oman" ],
+"variable": [ "2000" ],
+"value": [ 72.139 ],
+"Code": [ "OMN" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"PAK": {
+ "Country": [ "Pakistan" ],
+"variable": [ "2000" ],
+"value": [ 63.854 ],
+"Code": [ "PAK" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"PAN": {
+ "Country": [ "Panama" ],
+"variable": [ "2000" ],
+"value": [ 75.094 ],
+"Code": [ "PAN" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"PER": {
+ "Country": [ "Peru" ],
+"variable": [ "2000" ],
+"value": [ 70.506 ],
+"Code": [ "PER" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"PHL": {
+ "Country": [ "Philippines" ],
+"variable": [ "2000" ],
+"value": [ 66.774 ],
+"Code": [ "PHL" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"PNG": {
+ "Country": [ "Papua New Guinea" ],
+"variable": [ "2000" ],
+"value": [ 58.749 ],
+"Code": [ "PNG" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"POL": {
+ "Country": [ "Poland" ],
+"variable": [ "2000" ],
+"value": [  73.91 ],
+"Code": [ "POL" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"PRI": {
+ "Country": [ "Puerto Rico" ],
+"variable": [ "2000" ],
+"value": [ 75.828 ],
+"Code": [ "PRI" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"PRT": {
+ "Country": [ "Portugal" ],
+"variable": [ "2000" ],
+"value": [  76.84 ],
+"Code": [ "PRT" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"PRY": {
+ "Country": [ "Paraguay" ],
+"variable": [ "2000" ],
+"value": [ 70.073 ],
+"Code": [ "PRY" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"PSE": {
+ "Country": [ "West Bank and Gaza" ],
+"variable": [ "2000" ],
+"value": [ 70.929 ],
+"Code": [ "PSE" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"PYF": {
+ "Country": [ "French Polynesia" ],
+"variable": [ "2000" ],
+"value": [ 72.313 ],
+"Code": [ "PYF" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"QAT": {
+ "Country": [ "Qatar" ],
+"variable": [ "2000" ],
+"value": [  76.68 ],
+"Code": [ "QAT" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"REU": {
+ "Country": [ "Reunion" ],
+"variable": [ "2000" ],
+"value": [ 76.077 ],
+"Code": [ "REU" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"ROU": {
+ "Country": [ "Romania" ],
+"variable": [ "2000" ],
+"value": [  70.47 ],
+"Code": [ "ROU" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"RUS": {
+ "Country": [ "Russia" ],
+"variable": [ "2000" ],
+"value": [  65.38 ],
+"Code": [ "RUS" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"RWA": {
+ "Country": [ "Rwanda" ],
+"variable": [ "2000" ],
+"value": [ 47.642 ],
+"Code": [ "RWA" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"SAU": {
+ "Country": [ "Saudi Arabia" ],
+"variable": [ "2000" ],
+"value": [ 72.401 ],
+"Code": [ "SAU" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"SDN": {
+ "Country": [ "Sudan" ],
+"variable": [ "2000" ],
+"value": [ 57.979 ],
+"Code": [ "SDN" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"SEN": {
+ "Country": [ "Senegal" ],
+"variable": [ "2000" ],
+"value": [ 57.817 ],
+"Code": [ "SEN" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"SGP": {
+ "Country": [ "Singapore" ],
+"variable": [ "2000" ],
+"value": [  78.34 ],
+"Code": [ "SGP" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"SLB": {
+ "Country": [ "Solomon Islands" ],
+"variable": [ "2000" ],
+"value": [ 62.808 ],
+"Code": [ "SLB" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"SLE": {
+ "Country": [ "Sierra Leone" ],
+"variable": [ "2000" ],
+"value": [ 38.123 ],
+"Code": [ "SLE" ],
+"fillKey": [ null ] 
+},
+"SLV": {
+ "Country": [ "El Salvador" ],
+"variable": [ "2000" ],
+"value": [ 69.715 ],
+"Code": [ "SLV" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"SOM": {
+ "Country": [ "Somalia" ],
+"variable": [ "2000" ],
+"value": [ 50.902 ],
+"Code": [ "SOM" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"SRB": {
+ "Country": [ "Serbia" ],
+"variable": [ "2000" ],
+"value": [ 72.072 ],
+"Code": [ "SRB" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"SSD": {
+ "Country": [ "South Sudan" ],
+"variable": [ "2000" ],
+"value": [ 49.248 ],
+"Code": [ "SSD" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"STP": {
+ "Country": [ "Sao Tome and Principe" ],
+"variable": [ "2000" ],
+"value": [ 63.336 ],
+"Code": [ "STP" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"SUR": {
+ "Country": [ "Suriname" ],
+"variable": [ "2000" ],
+"value": [ 67.851 ],
+"Code": [ "SUR" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"SVK": {
+ "Country": [ "Slovak Republic" ],
+"variable": [ "2000" ],
+"value": [  73.19 ],
+"Code": [ "SVK" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"SVN": {
+ "Country": [ "Slovenia" ],
+"variable": [ "2000" ],
+"value": [  76.11 ],
+"Code": [ "SVN" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"SWE": {
+ "Country": [ "Sweden" ],
+"variable": [ "2000" ],
+"value": [  79.84 ],
+"Code": [ "SWE" ],
+"fillKey": [ "(77.6,81.3]" ] 
+},
+"SWZ": {
+ "Country": [ "Swaziland" ],
+"variable": [ "2000" ],
+"value": [ 48.689 ],
+"Code": [ "SWZ" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"SYC": {
+ "Country": [ "Seychelles" ],
+"variable": [ "2000" ],
+"value": [ 71.771 ],
+"Code": [ "SYC" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"SYR": {
+ "Country": [ "Syria" ],
+"variable": [ "2000" ],
+"value": [ 73.316 ],
+"Code": [ "SYR" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"TCD": {
+ "Country": [ "Chad" ],
+"variable": [ "2000" ],
+"value": [ 46.708 ],
+"Code": [ "TCD" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"TGO": {
+ "Country": [ "Togo" ],
+"variable": [ "2000" ],
+"value": [ 53.585 ],
+"Code": [ "TGO" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"THA": {
+ "Country": [ "Thailand" ],
+"variable": [ "2000" ],
+"value": [ 70.921 ],
+"Code": [ "THA" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"TJK": {
+ "Country": [ "Tajikistan" ],
+"variable": [ "2000" ],
+"value": [  63.57 ],
+"Code": [ "TJK" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"TKM": {
+ "Country": [ "Turkmenistan" ],
+"variable": [ "2000" ],
+"value": [ 63.925 ],
+"Code": [ "TKM" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"TLS": {
+ "Country": [ "Timor-Leste" ],
+"variable": [ "2000" ],
+"value": [ 59.468 ],
+"Code": [ "TLS" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"TON": {
+ "Country": [ "Tonga" ],
+"variable": [ "2000" ],
+"value": [  70.81 ],
+"Code": [ "TON" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"TTO": {
+ "Country": [ "Trinidad and Tobago" ],
+"variable": [ "2000" ],
+"value": [ 68.533 ],
+"Code": [ "TTO" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"TUN": {
+ "Country": [ "Tunisia" ],
+"variable": [ "2000" ],
+"value": [ 73.159 ],
+"Code": [ "TUN" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"TUR": {
+ "Country": [ "Turkey" ],
+"variable": [ "2000" ],
+"value": [  70.01 ],
+"Code": [ "TUR" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"TWN": {
+ "Country": [ "Taiwan" ],
+"variable": [ "2000" ],
+"value": [  76.02 ],
+"Code": [ "TWN" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"TZA": {
+ "Country": [ "Tanzania" ],
+"variable": [ "2000" ],
+"value": [  50.01 ],
+"Code": [ "TZA" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"UGA": {
+ "Country": [ "Uganda" ],
+"variable": [ "2000" ],
+"value": [ 48.126 ],
+"Code": [ "UGA" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"UKR": {
+ "Country": [ "Ukraine" ],
+"variable": [ "2000" ],
+"value": [  67.79 ],
+"Code": [ "UKR" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"URY": {
+ "Country": [ "Uruguay" ],
+"variable": [ "2000" ],
+"value": [ 74.777 ],
+"Code": [ "URY" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"USA": {
+ "Country": [ "United States" ],
+"variable": [ "2000" ],
+"value": [   76.8 ],
+"Code": [ "USA" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"UZB": {
+ "Country": [ "Uzbekistan" ],
+"variable": [ "2000" ],
+"value": [ 66.999 ],
+"Code": [ "UZB" ],
+"fillKey": [ "(60.4,67]" ] 
+},
+"VCT": {
+ "Country": [ "Saint Vincent and the Grenadines" ],
+"variable": [ "2000" ],
+"value": [   70.6 ],
+"Code": [ "VCT" ],
+"fillKey": [ "(70.5,72.2]" ] 
+},
+"VEN": {
+ "Country": [ "Venezuela" ],
+"variable": [ "2000" ],
+"value": [ 72.432 ],
+"Code": [ "VEN" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"VIR": {
+ "Country": [ "Virgin Islands (U.S.)" ],
+"variable": [ "2000" ],
+"value": [ 77.574 ],
+"Code": [ "VIR" ],
+"fillKey": [ "(74.6,77.6]" ] 
+},
+"VNM": {
+ "Country": [ "Vietnam" ],
+"variable": [ "2000" ],
+"value": [ 73.777 ],
+"Code": [ "VNM" ],
+"fillKey": [ "(72.2,74.6]" ] 
+},
+"VUT": {
+ "Country": [ "Vanuatu" ],
+"variable": [ "2000" ],
+"value": [ 67.438 ],
+"Code": [ "VUT" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"WSM": {
+ "Country": [ "Samoa" ],
+"variable": [ "2000" ],
+"value": [ 69.344 ],
+"Code": [ "WSM" ],
+"fillKey": [ "(67,70.5]" ] 
+},
+"YEM": {
+ "Country": [ "Yemen, Rep." ],
+"variable": [ "2000" ],
+"value": [ 60.404 ],
+"Code": [ "YEM" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"ZAF": {
+ "Country": [ "South Africa" ],
+"variable": [ "2000" ],
+"value": [ 55.892 ],
+"Code": [ "ZAF" ],
+"fillKey": [ "(51.5,60.4]" ] 
+},
+"ZMB": {
+ "Country": [ "Zambia" ],
+"variable": [ "2000" ],
+"value": [ 41.802 ],
+"Code": [ "ZMB" ],
+"fillKey": [ "(38.1,51.5]" ] 
+},
+"ZWE": {
+ "Country": [ "Zimbabwe" ],
+"variable": [ "2000" ],
+"value": [ 43.976 ],
+"Code": [ "ZWE" ],
+"fillKey": [ "(38.1,51.5]" ] 
+} 
+},
+"id": "chart1ab83ae616c7" 
+}
+  chartParams.element = document.getElementById('chart1ab83ae616c7')
+  
+  
+  var mapchart1ab83ae616c7 = new Datamap(chartParams);
+  
+  
+    
+  // draw a bubble map if specified
+  if (chartParams.bubbles) {
+    var bubbles = chartParams.bubbles
+    mapchart1ab83ae616c7.bubbles(bubbles)
+  }
+  
+  if (chartParams.labels){
+    mapchart1ab83ae616c7.labels()
+  }
+  
+  if (chartParams.legend){
+    mapchart1ab83ae616c7.legend()
+  }
+  
+  setProjection = function( element, options ) {
+    var projection, path;
+ 
+      projection = d3.geo.albersUsa()
+        .scale(element.offsetWidth)
+        .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+ 
+    path = d3.geo.path()
+      .projection( projection );
+ 
+    return {path: path, projection: projection};
+  }
+</script>
+
+<style>
+.datamaps {
+  position: relative;
+}
+</style>
+    
+    <script></script>    
+  </body>
+</html>

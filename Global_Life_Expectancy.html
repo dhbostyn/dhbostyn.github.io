@@ -229,35 +229,122 @@ $(document).ready(function () {
 
 <div id="life-expectancy-then-and-now" class="section level4">
 <h4>Life Expectancy, then and now</h4>
-<p>As an amateur statistician, I’m a big fan of the late Hans Rösling and by extension: <a href="https://www.gapminder.org/">GapMinder</a>. If you’re not familiar with their work: they essentially aim to update how view the world through the visual communication of statistics. As a great example, check out this great little tidbit from a <a href="https://www.youtube.com/watch?v=jbkSRLYSojo">BBC show</a>. As it turns out, much of what we think we know about the world is outdated and no longer reflects the current state of affairs. As it also turns out: by alot of metrics, our world has improved tremendously. It’s a positive and hopeful message that we tend to forget due to our daily exposure to the cynism of mass media.</p>
-<p>I also enjoy messing around with new R packages and data visualization. A while ago, I stumbled upon the <a href="http://rmaps.github.io/%20pacakge">rMaps</a>. Although, it seems that the package hasn’t been updated in a while, it still provides some very interesting functionality that could be used to visualize some of the amazing data provided by Gapminder. More specifcally, it can be used to create animated world maps, and I figured it would be an interesting way to plot how global life expectancy has changed from 1850 to very recently.</p>
-<p>the rMaps package is not (yet?) available through CRAN but it can be easily downloaded through github and thus through the “devtools” package.  </p>
+<p>As an amateur statistician, I’m a big fan of the late Hans Rösling and by extension: <a href="https://www.gapminder.org/">GapMinder</a>. If you’re not familiar with their work: they aim to update how we view the world through the visual communication of statistics. For instance, check out this great little tidbit from a <a href="https://www.youtube.com/watch?v=jbkSRLYSojo">BBC show</a>. As it turns out, much of what we think we know about the world is outdated and no longer reflects the current state of affairs. As it also turns out: by alot of metrics, our world has improved tremendously. Most of their stats send a positive and hopeful message. The big picture message is that our world has improved tremendously, even if it doesn’t always feel that way.</p>
+<p>I also enjoy messing around with new R packages and data visualization. A while ago, I stumbled upon the <a href="http://rmaps.github.io/%20pacakge">rMaps</a>. Although, it seems that the package hasn’t been updated in a while, it still provides some very interesting functionality that could be used to visualize some of the amazing data provided by Gapminder. More specifcally, it can be used to create animated world maps. As an homage to Gapminder and Hans Rösling, I figured it could be interesting to animate changes to life expectancy on a global world map from 1850 up until now.</p>
+<p>the rMaps package is not (yet?) available through CRAN but it can be easily downloaded through github and thus through the “devtools” package. The “devtools” package is typically the easiest way to download packages that are still in development on github. All you need is the url where you can find the package and “devtools” does all the hard work:</p>
 <pre class="r"><code>library(devtools)
 install_github(&#39;ramnathv/rCharts@dev&#39;)
 install_github(&#39;ramnathv/rMaps&#39;)
 
 library(rCharts)
-library(rMaps)</code></pre>
-<p> </p>
-<p>Gapminder also provides the data they use for their analyses freely on their website. You can download it in a number of ways but they also provide their data through googledocs which we can extract through the “googlesheets” package with some “dplyr” magic. We will also need the “reshape2” package later on, so we might as well just load it immediately.</p>
+library(rMaps)
+library(knitr)</code></pre>
+<p>Gapminder also provides the data they use for their analyses freely on their website. You can download it in a number of ways. One of the ways i which they provide their data is through googledocs. Ancient R-wisdom dictates that yes, “there is an R package for that”. In this case, the apptly named “googlesheets” package can come to our rescue. We will also need sile “dplyr” magic. Additionally, we’re going to need the “reshape2” package later on, so we might as well just load it immediately.</p>
 <pre class="r"><code>library(googlesheets)
+library(plyr)
 library(dplyr)
 library(rCharts)
-library(reshape2)</code></pre>
-<p>The googlesheets package allows us to extract data from googlesheets through the key that is associated with each document. In this case, we want to extract Gapminder’s life expectancy data which we can find in this <a href="https://docs.google.com/spreadsheets/d/1B89xX-0BdNR-qjM7_s5tZi2WCCmobejXd4RaMFKxAIw/">sheet</a>. The key we need is just there in the url and fits into the googlesheets ‘gs_key’. We can also chain the ‘gs_key’ with the ‘gs_read’ function to extract the data we need like so:</p>
+library(reshape2)
+library(countrycode)</code></pre>
+<p>The googlesheets package allows us to extract data from googlesheets through the “key” that is associated with each document. In this case, we want to extract Gapminder’s life expectancy data which we can find in this <a href="https://docs.google.com/spreadsheets/d/1B89xX-0BdNR-qjM7_s5tZi2WCCmobejXd4RaMFKxAIw/">sheet</a>. The key we need is just right there in the url. it’s the weird mess of numbers and letters after the /d/. We just plug it into into the googlesheets “gs_key”&quot; function. We can also chain the “gs_key”&quot; with the “gs_read”&quot; function to extract the data we need like so:</p>
 <pre class="r"><code>#Grabbing the data from gapminder
 life_exp &lt;- gs_key(&quot;1B89xX-0BdNR-qjM7_s5tZi2WCCmobejXd4RaMFKxAIw&quot;, lookup = FALSE,  verbose=FALSE) %&gt;% 
             gs_read(ws = &quot;Data&quot;, check.names=FALSE)</code></pre>
-<p>For a few countries, Gapminder actually has managed to find life expectancy data from the year 1765 and upwards, but frankly speaking: the data is still really sparse at that point. Changes to life expectancy also really only start to happen from 1850 onwards. As such, we subset the data. While we’re at it, the data we have is in <a href="http://www.cookbook-r.com/Manipulating_data/Converting_data_between_wide_and_long_format/">wide format</a> and the rMaps package needs the data to be in long format. The reshape2 package allows us to easily ‘melt’ our data by specifying which variable groups the individual measurements.</p>
+<p>A quick glance at this data will teach us that Gapminder has managed to find life expectancy data from the year 1765 and upwards for at least a few countries, but frankly speaking: the data is really sparse at that timepoint. Changes to life expectancy also really only start to happen from 1900 onwards. As such, we subset the data. We’re going to start at 1850 but I freely admit that is just a randomly chosen timepoint. However, I do think it is impressive to see how stable life expectancy is from 1850 tp 1900 and how quickly it starts changing from then on.</p>
+<p>While we’re at it, the data we have extracted is in <a href="http://www.cookbook-r.com/Manipulating_data/Converting_data_between_wide_and_long_format/">wide format</a> and the rMaps package needs the data to be in long format. The reshape2 package allows us to easily “melt”&quot; our data by specifying which variable groups the individual measurements.</p>
 <pre class="r"><code>#Subsetting the data to start from 1850
-life_exp &lt;-life_exp[,c(1,87:255)]
+life_exp &lt;-life_exp[,c(1,87:252)]
+life_exp &lt;- na.omit(life_exp)
 
 #Renaming the country-ID variable to something that makes actual sense
 colnames(life_exp)[1] &lt;-&quot;Country&quot;
 
 #Melting the data into a long format
-life_exp_long &lt;- melt(life_exp, id.var = &quot;Country&quot;)</code></pre>
-<p>We need to do a bit more prep-work before plotting our data…</p>
+life_exp_long &lt;- melt(life_exp, id.var = &quot;Country&quot;)
+
+#Associating ISO3 codes with each country
+life_exp_long$Code &lt;- NA
+life_exp_long$Code &lt;- countrycode(life_exp_long$Country, &#39;country.name&#39;, &#39;iso3c&#39;)
+life_exp_long$Code[life_exp_long$Country == &quot;Central African Rep.&quot;] &lt;-  &quot;CAF&quot;</code></pre>
+<p>We are aiming to create a map of the entire world in which each country is color coded according to its life expectancy for a given year. This is a categorical way of displaying our data and thus we need to categorize the life expectancy data into discrete chunks. The rMaps package could take care of that, but it might be better if we do it ourselves so we could split the data into intuitive categories and clearly label each of those categories. We’re also going to associate a color with each of these categories through the “RColorbrewer”&quot; package. It was loaded automatically when we loaded rMaps, so we don’t need to explicitly load it again.</p>
+<pre class="r"><code>#Categorizing the data
+life_exp_long$fillKey &lt;- NA
+life_exp_long$fillKey[life_exp_long$value&lt;80] &lt;- &quot;&gt;70&quot;
+life_exp_long$fillKey[life_exp_long$value&lt;70] &lt;- &quot;60 to 70&quot;
+life_exp_long$fillKey[life_exp_long$value&lt;60] &lt;- &quot;50 to 60&quot;
+life_exp_long$fillKey[life_exp_long$value&lt;50] &lt;- &quot;40 to 50&quot;
+life_exp_long$fillKey[life_exp_long$value&lt;40] &lt;- &quot;30 to 40&quot;
+life_exp_long$fillKey[life_exp_long$value&lt;30] &lt;- &quot;20 to 30&quot;
+life_exp_long$fillKey[life_exp_long$value&lt;20] &lt;- &quot;&lt;20&quot;
+
+fills = setNames(
+  c(RColorBrewer::brewer.pal(7, &#39;RdYlGn&#39;), &#39;white&#39;),
+  c(c(&quot;&lt;20&quot;,&quot;20 to 30&quot;,&quot;30 to 40&quot;,&quot;40 to 50&quot;,&quot;50 to 60&quot;,&quot;60 to 70&quot;,&quot;&gt;70&quot;), &#39;defaultFill&#39;)
+  )</code></pre>
+<p>The documentation for the rMaps is somewhat sparse. There are some blog posts available that walk you through an example but the package does not yet have the regular documentation that you can access from R. The easiest way to create our map would be to use the “ichoropleth” function, but I’d like to have a bit more control over the end-result. This can quite easily be achieved by using some javascript. I don’t actually know much javascript. In fact, I don’t really know any javascript at all but it’s easy to tweak the code that is provided on the rMaps blogs. The next bit of code does the following things: first we use “plyr” to turn our dataframe into a list, which is what we’ll eventually feed to “Datamaps”, the javascript framework creating the worldmap in the background. We then make a first, static map, animate it in a second step and finally add a playbutton in the third and final step. This code might look daunting but you only need to change a few things around to get it to work.</p>
+<pre class="r"><code>#Turning the data into a list
+dat &lt;- dlply(life_exp_long, &quot;variable&quot;, function(x){
+  y = toJSONArray2(x, json = F)
+  names(y) = lapply(y, &#39;[[&#39;, &#39;Code&#39;)
+  return(y)})
+
+#Creating First Choropleth
+options(rcharts.cdn = TRUE)
+map &lt;- Datamaps$new()
+map$set(
+  dom = &#39;chart_1&#39;,
+  scope = &#39;world&#39;,
+  fills = fills,
+  data = dat[[1]],
+  legend = TRUE,
+  labels = FALSE)
+
+#Animated chloropleth
+map2 = map$copy()
+map2$set(
+  bodyattrs = &quot;ng-app ng-controller=&#39;rChartsCtrl&#39;&quot;)
+
+map2$addAssets(
+  jshead = &quot;http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js&quot;)
+
+map2$setTemplate(chartDiv = &quot;
+  &lt;div id = &#39;chart_1&#39; class = &#39;rChart datamaps&#39;&gt;
+  &lt;input id=&#39;slider&#39; type=&#39;range&#39; min=1850 max=2015 ng-model=&#39;year&#39; width=200&gt;
+  &lt;span ng-bind=&#39;year&#39;&gt;&lt;/span&gt;
+    
+  &lt;script&gt;
+    function rChartsCtrl($scope){
+      $scope.year = &#39;1850&#39;;
+      $scope.$watch(&#39;year&#39;, function(newYear){
+        mapchart_1.updateChoropleth(chartParams.newData[newYear]);
+      })
+    }
+  &lt;/script&gt;
+  &lt;/div&gt;&quot;)
+map2$set(newData = dat)
+
+#Add the play button
+map3 = map2$copy()
+map3$setTemplate(chartDiv = &quot;
+                 &lt;div class=&#39;container&#39;&gt;
+                 &lt;button ng-click=&#39;animateMap()&#39;&gt;Play&lt;/button&gt;
+                 &lt;div id=&#39;chart_1&#39; class=&#39;rChart datamaps&#39;&gt;&lt;/div&gt;  
+                 &lt;/div&gt;
+                 &lt;script&gt;
+                 function rChartsCtrl($scope, $timeout){
+                   $scope.year = 1850;
+                   $scope.animateMap = function(){
+                     if ($scope.year &gt; 2014){
+                       return;
+                      }
+                   mapchart_1.updateChoropleth(chartParams.newData[$scope.year]);
+                   $scope.year += 1
+                   $timeout($scope.animateMap, 100)
+                   }
+                 }
+                 &lt;/script&gt;&quot;)
+map3</code></pre>
+<pre><code>## &lt;iframe src=&#39; Global_Life_Expectancy_files/figure-html/unnamed-chunk-6-1.html &#39; scrolling=&#39;no&#39; frameBorder=&#39;0&#39; seamless class=&#39;rChart datamaps &#39; id=iframe- chart_1 &gt;&lt;/iframe&gt; &lt;style&gt;iframe.rChart{ width: 100%; height: 400px;}&lt;/style&gt;</code></pre>
 </div>
 
 
