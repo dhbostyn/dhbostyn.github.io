@@ -32,9 +32,9 @@ Data was gathered on Mturk. We aimed to gather 140 participants but ended up wit
 Participants completed an online questionnaire that measured:  
   
 - some basic demographic information   
-- an 8 item version of the Sense of Power questionnaire  
-- a 4 item Behavioral Inhibition / Behavioral Activation questionnaire  
-- a 5 item measure of Abstract thinking  
+- Personal Sense of Power scale (<a href="https://dx.doi.org/10.1111/j.1467-6494.2011.00734.x">Anderson, John, & Keltner, 2012</a>)  
+- a 4 item Behavioral Inhibition / Behavioral Activation questionnaire (<a href="https://dx.doi.org/10.1037/0022-3514.67.2.319">Carver & White, 1994</a>)
+- 5 items from the Behavior Identification From to measure abstract thinking (<a href="https://dx.doi.org/10.1037/0022-3514.57.4.660">Vallacher & Wegner, 1989</a>)  
 - Consequentialist moral reasoning as measured by participants binary responses to a 10 item moral dilemma battery ("Is it appropriate to do the consequentialist action?")  
   
 The Sense of Power questionnaire was included because Lammers & Stapel uncovered it was significantly (negatively) associated with consequentialist moral reasoning. The Abstract thinking questionnaire was included because Lammers & Stapel uncovered the former effect was mediated by participants level of abstract thinking. And finally, the BIS/BAS measure was included for exploratory purposes.  
@@ -49,7 +49,7 @@ For the sake of transparancy: consequentialist moral reasoning appeared to be as
 #####Cursory Discussion
 In this initial study we did not find any evidence for an association of participants' Sense of Power and their preference for consequentialist moral reasoning.  
   
-It is worth mentioning that we ran two more studies in a similar vein and none of these uncovered a significant association between these variables. I intend to incorperate both of these other studies into this post in the very near future.  
+It is worth mentioning that we ran another study in a similar vein that also did not uncovere a significant association between these variables. I intend to incorperate this data into this post in the very near future.  
   
 Please note that this post is not intended as a repudiation of the earlier work by Lammers & Stapel. The dilemmas we used are quite unlike the ones used in their studies and this difference can easily explain our diverging results.  
 
