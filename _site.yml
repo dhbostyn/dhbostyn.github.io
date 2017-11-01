@@ -9,14 +9,9 @@ navbar:
       href: publications.html
     - text: "My Filedrawer"
       menu:
-        - text: "Failed Study 1"
-          href: filedrawer1.html
-        - text: "Dissapointing Study 2"
-          href: filedrawer2.html
-    - text: "Fun Stats"
-      menu:
-        - text: "Life Expectancy, then and now"
-          href: Global_Life_Expectancy.html
+        - text: "Power and Consequentialism"
+          href: Power1.html
+
 output: 
   html_document:
     theme: simplex

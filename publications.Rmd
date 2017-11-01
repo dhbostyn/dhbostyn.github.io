@@ -2,15 +2,22 @@
 title: ""
 output: html_document
 ---
-### Description
-This page contains a list of my publications, a short introduction of each, a link to the relevant manuscript, and a link to the  Open Science Framework page associated with each publication that archives the data and materials. For a more comprehensive overlook of my work I kindly refer to my Scholar, Researchgate or ORCid pages. If you cannot access any of these articles but are interested in reading them, just send me a quick <a href="mailto:dries.bostyn@ugent.be">e-mail</a>.
+<br>
+This page contains:  
+  
+-  a list of my publications  
+-  a short introduction to  each  
+-  a link to the relevant manuscript  
+-  a link to the  Open Science Framework page associated with each publication that archives the data and materials.   
+  
+For a more comprehensive overlook of my work I kindly refer to my Scholar, Researchgate or ORCid pages. If you cannot access these articles through their associated Journals but are interested in reading them, just send me a quick <a href="mailto:dries.bostyn@ugent.be">e-mail</a>.
 
 ***
 
 ####Trust, trolleys and social dilemmas: a replication study. (JEP:G, 2017)
 D.H. Bostyn & A. Roets
 
-In this study, we found that people tend to trust (and cooperate) more with deontologists than with utilitarians. We did not originally plan for the current study to be a replication study. In fact, the core idea behind this study was one of the first ideas I pitched to Arne (Roets) when I started my PhD. I met Jim Everett (who's work we replicate in this study) at a small group meeting in Amsterdam and he mentioned that he was working on this idea as well. At the time, I hadn't yet written up the study, and a pre-print of his great work was published shortly after. Fortunately for us, while his work was very comprehensive, we each had made some very different methodological choices allowing our work to complement his. 
+In this study, we found that people tend to trust (and cooperate) more with deontologists than with utilitarians. We did not originally plan for the current study to be a replication study. In fact, the core idea behind this study was one of the first ideas I pitched to Arne (Roets) when I started my PhD. I met Jim Everett (who's work we replicate in this study) at a small group meeting in Amsterdam and he mentioned that he was working on this idea as well. At the time, I hadn't yet written up the study, and a pre-print of his amazing paper was published shortly thereafter. Fortunately for us, while his work was very comprehensive, we had made some very different methodological choices allowing our work to complement his. 
 
 <a href="https://doi.org/10.1037/xge0000295">DOI: 10.1037/xge0000295</a><br>
 <a href="https://osf.io/s5bqr/">OSF page</a>  
@@ -19,7 +26,7 @@ In this study, we found that people tend to trust (and cooperate) more with deon
 ####An asymmetric moral conformity effect: subjects conform to deontological but not consequentialist majorities. (SPPS, 2017)
 D.H. Bostyn & A. Roets
 
-In this paper we explored a conformity effect in the context of moral reasoning. In two studies we found that people display increased deontological responding when others appear to be deontologist but not seem to display increased consequentialist responding when others apppear to be consequentialist. I initilally presented this data at a small group meeting in Amsterdam. At the time, I simply explained our results by referring to our (at the time) unpublished work on consequentialist reasoning and trust. Though I was already familiar with person-centered approach on moral cognition, I had not yet realized just how relevant it was to the work Arne and me were doing until I read Everett et al's great <a href="http://dx.doi.org/10.1037/xge0000165">"Inference of trustworthiness from intuitive moral judgments"</a> paper.  
+In this paper we explored a conformity effect in the context of moral reasoning. In two studies we found that people display increased deontological responding when others appear to be deontologist but not seem to display increased consequentialist responding when others apppear to be consequentialist. I initilally presented this data at a small group meeting in Amsterdam. At the time, I simply explained our results by referring to our (at the time) unpublished work on consequentialist reasoning and trust. Though I was already familiar with person-centered approach on moral cognition, I had not yet realized just how relevant it was to the work Arne and me were doing until I read Everett et al's great <a href="http://dx.doi.org/10.1037/xge0000165">"Inference of trustworthiness from intuitive moral judgments"</a> paper and rediscovered Eric Uhlmann's et al <a href=" https://doi.org/10.1016/j.cognition.2012.10.005"> When it takes a bad person to do the right thing.  
 
 <a href="https://doi.org/10.1177/1948550616671999">DOI: 10.1177/1948550616671999</a><br>
 <a href="https://osf.io/b5rp7/">OSF page</a>  
@@ -28,7 +35,7 @@ In this paper we explored a conformity effect in the context of moral reasoning.
 ####The morality of action: The assymmetry between judgments of praise and blame in the action-omission effect. (JESP, 2016)
 D.H. Bostyn & A. Roets
 
-The idea for this study came about after I ran a number of studies within the trolley paradigm that did not work out. Arne and me wanted to shift our attention for a short while to something 'short and sweet' to try and get a quick, first publication. We started with a first study, wrote it up and send it in. That first study morphed into two studies, and eventually a third. What was iniitiated as something 'short and sweet' ended up as a project that took almost two years to complete. However, over the course of those two years the paper did improve significantly. In that regard, special thanks go to Roger Giner-Sorolla who was our action-editor at the time, and whose constructive comments ended up benefitting the paper tremendously.
+When I started my PhD, the first few studies I ran did not work out. Arne and me wanted to shift our attention for a short while to something 'short and sweet' to try and get a quick, first publication because a first easy is somewhat of a prerequisite to get funding to participate in international conferences here in Belgium. We started with a straightforward idea: just test the action-omission effect in scenarios with positive outcomes. I ran the first study, wrote it up and send it in. During the review process, that first study morphed into two studies, and eventually even a third. What was initiated as something 'short and sweet' ended up as a project that took almost two years to complete. However, over the course of those two years the paper did improve significantly. In that regard, special thanks go to Roger Giner-Sorolla who was our action-editor at the time, and whose constructive comments ended up benefitting the paper tremendously.
 
 <a href="https://doi.org/10.1016/j.jesp.2015.11.005">DOI: 10.1016/j.jesp.2015.11.005</a><br>
 <a href="https://osf.io/9rkjt/">OSF page</a>  
@@ -37,9 +44,9 @@ The idea for this study came about after I ran a number of studies within the tr
 ####Right-wing attitudes and moral cognition: are Right-Wing Authoritarianism and social dominance Orientation related to utilitarian Judgement? (PAID, 2016)
 D.H. Bostyn, A. Van Hiel, & A. Roets
 
-When I started my PhD, Arne (Roets) and me had not yet finalized what I would be working on. We had a general outline: trolleys and moral psychology, but were both still new to the field. While I read up on the relevant literature, Arne figured we should start up a few projects already. I pitched two ideas essentially combining trolley-research and the research our lab was doing already. One of thos ideas eventually blossomed into the 'Trust, trolleys and social dilemmas' paper, the other, into this one... 
+When I started my PhD, Arne (Roets) and I had not yet finalized what I would be working on. We had a general outline: trolleys and moral psychology, but were both still new to the field. While I read up on the relevant literature, Arne figured we should start up a few projects already. I pitched two ideas essentially combining trolley-research and the research our lab was doing already. One of thos ideas eventually blossomed into the 'Trust, trolleys and social dilemmas' paper, the other, into this one... 
 
-In short: we found that SDO was asociated with increased consequentialist reasoning and that RWA was associated with decreased deontological reasoning. Since then,  other researchers have published  similar studies and though the assocation of SDO with increased consequentialist thinking seems fairly robust, it appears that evidence for an association of RWA with decreased deontological thinking is more mixed (ADD IN REFERENCES)
+In short: we found that SDO was asociated with increased consequentialist reasoning and that RWA was associated with decreased deontological reasoning. Since then,  other researchers have published  similar studies and though the assocation of SDO with increased consequentialist thinking seems fairly robust, it appears that evidence for an association of RWA with decreased deontological thinking is more mixed. I am planning to add in these other relevant references later. As of now, here's our contribution.
 
 <a href="https://doi.org/10.1016/j.paid.2016.03.006">DOI:10.1016/j.paid.2016.03.006</a><br>
 <a href="https://osf.io/sne78/">OSF page</a>  
@@ -47,7 +54,7 @@ In short: we found that SDO was asociated with increased consequentialist reason
   
 ***
 
-### Co-author
+#### Co-authored Publications
 Van Assche, J., Bostyn, D.H., De keersmaecker, J., Dardenne, B., & Hansenne, M. (in Press). Intergroup reconciliation between Flemmings and Walloons: The predictive value of cognitive style, authoritarian ideology, and intergroup emotions. *Psychologica Belgica*. 
 
 De keersmaecker, J., Bostyn, D.H., Fontaine, J.R.J., Van Hiel, A., & Roets, A. (Online First). Towards an integrated cognition perspective on ethnic prejudice: An investigation into the role of intelligence and need for cognitive closure. *Social Psychology and Personality Science*. <a href="https://doi.org/10.1177/1948550617722201">doi: 10.1177/1948550617722201</a>
@@ -58,4 +65,6 @@ Van Hiel, A. Roets, A., Van Assche, J., Bostyn, D.H., De keersmaecker, J., Haese
  
 
 
-<p style="font-size:75%;">last updated: 11th August 2017<p>
+<p style="font-size:75%;">last updated: 1th November 2017<p>
+
+<br>

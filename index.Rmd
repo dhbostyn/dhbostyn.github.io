@@ -6,15 +6,24 @@ title: ""
 knitr::opts_chunk$set(echo = TRUE)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
+<br>
 
-## R Markdown
+####Welcome  
+  
+Welcome to this little corner of the web I have claimed for myself. Short disclaimer: this site is still very much under construction and at the moment contains only my publication list. 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+I am a big believer in transparency and believe that sharing data and statistical code is an absolute necessity. The data and code for my studies is available on open science and the current site contains links to each. Furthermore, I am planning on using this site as a platform to disseminate some of the failed studies I have ran in an effort to keep my filedrawer at least somewhat 'clean'.  
+  
+Thank you for your interest, <br>
+Never hesitate to send me an email, <br>
+-Dries H. Bostyn-
+<br>
+<br>
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+####Currently Working on:  
+-  a manuscript exploring the judgment-behavior gap in moral cognition (Under Review)  
+-  a manuscript exploring the the generalizability of consequentialist moral judgment across moral domains (Under Review)  
+-  a manuscript exploring individual differences in implicit moral rule usage (In Prep)
+-  a number of different series of studies related to scientific 'awe' (Gathering Data)
 
-## Lorem Ipsum
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+<br>

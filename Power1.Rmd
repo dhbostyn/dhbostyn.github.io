@@ -1,0 +1,56 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<br>
+This page contains:  
+  
+-  a short description of this study   
+-  a link to the  Open Science Framework page associated with each publication that archives the data and materials.   
+  
+Please note that this has not been peer reviewed. Co-authors mentioned were cooperators on these studies but did not involve themselves with the current write-up. Any mistakes are mine and mine alone. Any opinions expressed are mine personally.
+
+***
+
+####Power and Consequentialist moral Judgment
+D.H. Bostyn & A. Roets
+
+#####Introduction
+The idea for the current study came about after reading the article <a href="https://dx.doi.org/10.1037/a0015437">"How Power Influences Moral Thinking"</a> by Joris Lammers & Diederik Stapel (2009). Given the controversies surrounding Diederik Stapel, I want to explicitly mention that we did not intend our work to be a replication test of this earlier work. As far as I am aware, the referenced article has been cleared of the charges against Stapel. 
+  
+In a set of five studies, Lammers & Stapel (2009) found that power increased rule-based (deontological) moral thinking. However, unlike most of the literature on trolley dilemmas Lammers & Stapel focused on moral dilemmas, that did not involve the extreme life-or-death situations that most of trolley research has focused on. As such, we wanted to built on this earlier work and test if their findings would generalize to this other type of moral dilemmas; a suggestion they themselves made in the discussion of their results.  
+  
+Building on the person-centered approach to moral cognition and the recent findings on the relationship between anti-social tendencies and consequentialist moral judgment, I  was actually expecting to find that power would increase consequentialist moral judgment for responses to traditional extreme harm trolley dilemmas. 
+  
+#####Method
+Data was gathered on Mturk. We aimed to gather 140 participants but ended up with 148. I've noticed that happens sometimes on mTurk, though I'm not exactly sure why. I can only assume that some mTurkers forget to register their completion of the study.  
+  
+Participants completed an online questionnaire that measured:  
+  
+- some basic demographic information   
+- an 8 item version of the Sense of Power questionnaire  
+- a 4 item Behavioral Inhibition / Behavioral Activation questionnaire  
+- a 5 item measure of Abstract thinking  
+- Consequentialist moral reasoning as measured by participants binary responses to a 10 item moral dilemma battery ("Is it appropriate to do the consequentialist action?")  
+  
+The Sense of Power questionnaire was included because Lammers & Stapel uncovered it was significantly (negatively) associated with consequentialist moral reasoning. The Abstract thinking questionnaire was included because Lammers & Stapel uncovered the former effect was mediated by participants level of abstract thinking. And finally, the BIS/BAS measure was included for exploratory purposes.  
+  
+The data of this study and some basic statistical code is available on <a href="https://osf.io/f3aj8/">Open Science</a>.  
+
+#####Results
+Although participants' sense of power was marginally positively associated with their level of abstract thinking, *r* = .15, *p* = .079, sense of power did not appear to be associated with our measure of consequentialist moral reasoning, *r* = -.02, *p* = .803.  
+  
+For the sake of transparancy: consequentialist moral reasoning appeared to be associated with behavioral inhibition, *r* = -.16, *p* = .046 but not with any of the other measures.  
+  
+#####Cursory Discussion
+In this initial study we did not find any evidence for an association of participants' Sense of Power and their preference for consequentialist moral reasoning.  
+  
+It is worth mentioning that we ran two more studies in a similar vein and none of these uncovered a significant association between these variables. I intend to incorperate both of these other studies into this post in the very near future.  
+  
+Please note that this post is not intended as a repudiation of the earlier work by Lammers & Stapel. The dilemmas we used are quite unlike the ones used in their studies and this difference can easily explain our diverging results.  
+
+<br>

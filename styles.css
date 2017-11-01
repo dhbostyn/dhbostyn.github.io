@@ -1,8 +1,14 @@
+.navbar{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(225,225,225);
+}
+
 
 .footer{
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(238,238,238);
+  border-color: rgb(225,225,225);
   position: static;
   bottom: 0;
   width: 250%;
