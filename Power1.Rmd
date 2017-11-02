@@ -14,6 +14,7 @@ This page contains:
   
 Please note that this has not been peer reviewed. Co-authors mentioned were cooperators on these studies but did not involve themselves with the current write-up. Any mistakes are mine and mine alone. Any opinions expressed are mine personally.
 
+The data of these studies and some basic statistical code is available on <a href="https://osf.io/f3aj8/">Open Science</a>. 
 ***
 
 ####Power and Consequentialist moral Judgment
@@ -42,8 +43,6 @@ Participants completed an online questionnaire that measured:
 - Consequentialist moral reasoning as measured by participants binary responses to a 10 item moral dilemma battery ("Is it appropriate to do the consequentialist action?")  
   
 The Sense of Power questionnaire was included because Lammers & Stapel uncovered it was significantly (negatively) associated with consequentialist moral reasoning. The Abstract thinking questionnaire was included because Lammers & Stapel uncovered the former effect was mediated by participants level of abstract thinking. And finally, the BIS/BAS measure was included for exploratory purposes.  
-  
-The data of this study and some basic statistical code is available on <a href="https://osf.io/f3aj8/">Open Science</a>.  
 <br>
 <br>
   
