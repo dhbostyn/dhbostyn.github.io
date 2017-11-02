@@ -15,6 +15,7 @@ This page contains:
 Please note that this has not been peer reviewed. Co-authors mentioned were cooperators on these studies but did not involve themselves with the current write-up. Any mistakes are mine and mine alone. Any opinions expressed are mine personally.
 
 The data of these studies and some basic statistical code is available on <a href="https://osf.io/f3aj8/">Open Science</a>. 
+
 ***
 
 ####Power and Consequentialist moral Judgment
