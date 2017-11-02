@@ -11,6 +11,8 @@ navbar:
       menu:
         - text: "Power and Consequentialism"
           href: Power1.html
+        - text: "A Small List"
+          href: SmallList.html
 
 output: 
   html_document:
