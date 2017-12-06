@@ -95,7 +95,7 @@ Nevertheless, given the sparcity of results we decided not to continue this rese
 <br>
 <br>
  
-######Update December 2017:
-A recent paper (with prof. Lammers as a co-author) can actually help explain why we failed to find any effects. Fleischmann, Lammers, Conway and Galinsky (In Press) suggest that power can jointly increase and decrease utilitarian inclinations by increasing 'rule orientation' (tendency to focus on rules) and increasing 'deliberation orientation (tendency to focus on outcomes) at the same time. It's a great paper, well worth a read and can help explain the results reported above. As far as I know, the paper is currently still in press and has not yet received a doi but you can easily find it through the first author's <https://www.researchgate.net/profile/Alexandra_Fleischmann">Researchgate</a> profile.  
-
+#####Update December 2017:
+A recent paper (with prof. Lammers as a co-author) can actually help explain why we failed to find any effects. Fleischmann, Lammers, Conway and Galinsky (In Press) suggest that power can jointly increase and decrease utilitarian inclinations by increasing 'rule orientation' (tendency to focus on rules) and increasing 'deliberation orientation (tendency to focus on outcomes) at the same time. It's a great paper, well worth a read and can help explain the results reported above. As far as I know, the paper is currently still in press and has not yet received a doi but you can easily find it through the first author's <a href="https://www.researchgate.net/profile/Alexandra_Fleischmann">Researchgate</a> profile.  
+<br>  
 
