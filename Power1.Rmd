@@ -12,7 +12,7 @@ This page contains:
 -  a short description of this study   
 -  a link to the  Open Science Framework page associated with each publication that archives the data and materials.   
   
-Please note that this has not been peer reviewed. Co-authors mentioned were cooperators on these studies but did not involve themselves with the current write-up. Any mistakes are mine and mine alone. Any opinions expressed are mine personally.
+Please note that this post has not been peer reviewed. Co-authors mentioned were cooperators on these studies but did not involve themselves with the current write-up. Any mistakes are mine and mine alone. Any opinions expressed are mine personally.
 
 The data of these studies and some basic statistical code is available on <a href="https://osf.io/f3aj8/">Open Science</a>. 
 
@@ -92,5 +92,10 @@ A correlation matrix displaying the remaining results is presented in the follow
 Across two studies we did not uncover much evidence that power is related to a specific preference towards a certain type of moral reasoning. The most important caveat for these conclusions is that both studies were run on fairly small samples and thus suffer from an obvious lack of power. In this regard, it is perhaps worth mentioning that, although it did not reach significance, the estimated effect of the power manipulation on participants' preference for consequentialist moral reasoning was *Cohen's D* = 0.36. 
 
 Nevertheless, given the sparcity of results we decided not to continue this research project. Please note that this post is not intended as a repudiation of the earlier work by Lammers & Stapel. Our studies have a number of obvious limitations and more importantly: the dilemmas we used are quite unlike the ones used in their studies. This difference alone can easily explain our diverging results.  
-
 <br>
+<br>
+ 
+######Update December 2017:
+A recent paper (with prof. Lammers as a co-author) can actually help explain why we failed to find any effects. Fleischmann, Lammers, Conway and Galinsky (In Press) suggest that power can jointly increase and decrease utilitarian inclinations by increasing 'rule orientation' (tendency to focus on rules) and increasing 'deliberation orientation (tendency to focus on outcomes) at the same time. It's a great paper, well worth a read and can help explain the results reported above. As far as I know, the paper is currently still in press and has not yet received a doi but you can easily find it through the first author's <https://www.researchgate.net/profile/Alexandra_Fleischmann">Researchgate</a> profile.  
+
+
