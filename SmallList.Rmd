@@ -14,7 +14,7 @@ I believe it is important to at least make a minimal effort to share the researc
 For all projects included in this list, at least one study was ran and data was collected. These studies are not discussed in full because either:
 
 - only small amounts of data were gathered
-- the data was gathered in a messy way and I haven't yet found the time or willpower to clean it up to make it easily digestible
+  - the data was gathered in a messy way and I haven't yet found the time or willpower to clean it up and make it easily digestible
 - results were simply not interesting enough to warrant further discussion
 
 Some of these projects were motivated by a clear theoretical reason. Some others studies were ran because I simply liked the idea. In any case, if any of these projects sound interesting to you, or you would like to receive the data, don't hesitate to send me an e-mail. I do not mind disseminating the results of these projects to interested parties. 
@@ -33,7 +33,8 @@ Some of these projects were motivated by a clear theoretical reason. Some others
 - A number of studies on atheist beliefs and their relation to dogmatism and need for closure. Three studies were conducted. Hopeful, but not great results that by and large were similar to results by <a href="https://dx.doi.org/10.1111/bjop.12186">Kossowska et al.</a>
 
 - A study investigating racism and preference for consequentialist moral judgment. Small pilot study uncovered a large positive association. Large mTurk replication failed to replicate the effect.
-A study investigating if completing trolley dilemmas influenced participants' perception of their own moral values. Some minor but fairly uninteresting effects were uncovered.
+
+- A study investigating if completing trolley dilemmas influenced participants' perception of their own moral values. Some minor but fairly uninteresting effects were uncovered.
 
 - A study investigating if video game behavior is associated with consequentialist moral preference. Messy data that hinted at a small effect.
 
