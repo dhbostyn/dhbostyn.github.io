@@ -13,13 +13,22 @@ This page contains:
 For a more comprehensive overlook of my work I kindly refer to my Scholar, Researchgate or ORCid pages. If you cannot access these articles through their associated Journals but are interested in reading them, just send me a quick <a href="mailto:dries.bostyn@ugent.be">e-mail</a>.
 
 ***
-####Of Mice, men, and trolleys: Hypothetical judgment versus real-Life behavior in trolley-style moral dilemmas. (Psychological Science, Forthcoming)
+####Of Mice, men, and trolleys: Hypothetical judgment versus real-Life behavior in trolley-style moral dilemmas. (Psychological Science, 2018)
 D.H. Bostyn, S. Sevenhant, & A. Roets
 
 In this study, we compared people's responses on a trolley-style dilemma involving mice in both a real-life and a hypothetical condition. One of the typical complaints that people have about trolley dilemma research is that it is unrealistic and that people might have trouble imagining how they would react in real-life. We found some support for this idea, although our results are fairly nuanced and do also demonstrate that hypothetical dilemma research has its merits. I had wanted to run a study like this for a long time but was scared of the logistics involved. Sybren (Sevenhant) joined our lab for an internship during his Masters and this was one of the projects we collaborated on. Although, we do not discuss it in the paper, one of the things that struck me most during the run of this experiment was just how apologetic participants in the real-life sample were when they made a consequentialist decision. We are planning on exploring this some more in the future.
 
 <a href="https://doi.org/10.1177/0956797617752640">DOI: 10.1177/0956797617752640</a><br>
 <a href="https://osf.io/kvb99/">OSF page</a>  
+&nbsp;
+
+####Beyond physical harm: how preference for consequentialism and primary psychopathy relate to decisions on a monetary trolley dilemma. (Thinking & Reasoning, 2018)
+D.H. Bostyn, S. Sevenhant, & A. Roets
+
+In this study, we compared people's responses on traditional trolley-style dilemmas to a trolley dilemma involving monetary harms. This work was directly inspired by our previous work on real-life moral dilemmas and again our results seem to demonstrate both similarities and differences between these different kinds of trolley-style moral dilemmas. Our main finding is that primary psychopathy seems predict responses to traditional harm-centric dilemmas much better, than it predicts responses to monetary trolley dilemmas. To me, these results emphasize just how important it is to explore different kinds of trolley-style moral dilemmas. Crucially, the paradigm used in the current paper is quite easy to replicate! In any case, anyone interested in this line of work should also check out the amazing work by Natalie Gold, Andrew Colman and Briony Pulford (<a href="https://doi.org/10.1016/j.joep.2015.01.001">example 1</a> or <a href="https://doi.org/10.1017/S0266267113000205">example 2</a>)
+
+<a href="https://doi.org/10.1080/13546783.2018.1497536">DOI: 10.1080/13546783.2018.1497536</a><br>
+<a href="https://osf.io/u6x9r/">OSF page</a>  
 &nbsp;
 
 ####Trust, trolleys and social dilemmas: a replication study. (JEP:G, 2017)
@@ -63,9 +72,15 @@ In short: we found that SDO was asociated with increased consequentialist reason
 ***
 
 #### Co-authored Publications
-Van Assche, J., Bostyn, D.H., De keersmaecker, J., Dardenne, B., & Hansenne, M. (in Press). Intergroup reconciliation between Flemmings and Walloons: The predictive value of cognitive style, authoritarian ideology, and intergroup emotions. *Psychologica Belgica*. 
+Van Hiel, A., Van Assche, J., De Cremer, D., Onraet, E., Bostyn, D.H., Haesevoets, T., Roets, A. (2018). Can education change the world? Education amplifies differences in liberalization values and innovation between developed and developing countries, *PloS one* <a href="https://doi.org/10.1371/journal.pone.0199560">doi: 10.1371/journal.pone.0199560</a>
 
-De keersmaecker, J., Bostyn, D.H., Fontaine, J.R.J., Van Hiel, A., & Roets, A. (Online First). Towards an integrated cognition perspective on ethnic prejudice: An investigation into the role of intelligence and need for cognitive closure. *Social Psychology and Personality Science*. <a href="https://doi.org/10.1177/1948550617722201">doi: 10.1177/1948550617722201</a>
+Haesevoets, T.; Bostyn, D.H., Reinders Folmer, C., Roets, A., Van Hiel, A. (2018). Decision making in the prisoner's dilemma game: The effect of exit on cooperation and social welfare, *Journal of Behavioral Decision Making* <a href="https://doi.org/10.1002/bdm.2096">doi: 10.1002/bdm.2096</a>
+
+Haesevoets, T., Reinders Folmer, C., Bostyn, D.H., Van Hiel, A. (2018). Behavioural Consistency Within the Prisoner's Dilemma Game: The Role of Personality and Situation, *European Journal of Personality* <a href="https://doi.org/10.1002/per.2158">doi: 10.1002/per.2158</a>
+
+Van Assche, J., Bostyn, D.H., De keersmaecker, J., Dardenne, B., & Hansenne, M. (2017). Intergroup reconciliation between Flemmings and Walloons: The predictive value of cognitive style, authoritarian ideology, and intergroup emotions. *Psychologica Belgica*. 
+
+De keersmaecker, J., Bostyn, D.H., Fontaine, J.R.J., Van Hiel, A., & Roets, A. (2017). Towards an integrated cognition perspective on ethnic prejudice: An investigation into the role of intelligence and need for cognitive closure. *Social Psychology and Personality Science*. <a href="https://doi.org/10.1177/1948550617722201">doi: 10.1177/1948550617722201</a>
 
 Haesevoets, T.,  Van Hiel, A., Pandelaere M., Bostyn, D.H., & De Cremer, D. (2017). How much compensation is too much? An investigation of the effectiveness of financial overcompensation as a means to enhance customer loyalty. *Judgment and Decision Making*, 12(2). p.183-197. <a href="http://journal.sjdm.org/16/16929/jdm16929.html">link</a>
 
@@ -73,6 +88,6 @@ Van Hiel, A. Roets, A., Van Assche, J., Bostyn, D.H., De keersmaecker, J., Haese
  
 
 
-<p style="font-size:75%;">last updated: 1th November 2017<p>
+<p style="font-size:75%;">last updated: 19th October 2018<p>
 
 <br>

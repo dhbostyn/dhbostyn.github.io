@@ -20,9 +20,11 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -31,10 +33,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -91,6 +95,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -219,16 +226,15 @@ $(document).ready(function () {
 <p><br></p>
 <div id="welcome" class="section level4">
 <h4>Welcome</h4>
-<p>Welcome to this little corner of the web I have claimed for myself. Short disclaimer: this site is still very much under construction. At the moment, I mostly use to keep an updated publication list and as a platform for me to disseminate some of the “failed” studies that I have ran in an effort to be fully transparent about the research I am conducting.</p>
-<p>I am a big believer in transparency and believe that sharing data and statistical code is an absolute necessity. The data and code for my studies is available on open science and the current site contains links to each.</p>
+<p>The current site keeps track of my latest publications and additionally, serves as an outlet to disseminate some of “failed projects”. I am a big believer in transparency and believe that sharing data and statistical code is an absolute necessity. The data and code for my studies is available on open science and the current site contains links to each. Furthermore, the filedrawer tab gives at least some indication to some of the projects that I have ran in the past but which I am no longer pursuing. Whenever I find the time, I try and write a small blog post about this work.</p>
 <p>Thank you for your interest, <br> Never hesitate to send me an email, <br> -Dries H. Bostyn- <br> <br></p>
 </div>
 <div id="currently-working-on" class="section level4">
 <h4>Currently Working on:</h4>
 <ul>
 <li>a manuscript exploring individual differences in implicit moral rule usage (In Prep)</li>
-<li>a manuscript exploring the effect of cognitive ability on moral judgment (In Prep)</li>
-<li>a number of different series of studies related to scientific ‘awe’ (Gathering Data)</li>
+<li>a manuscript exploring the effect of cognitive ability on moral judgment (Under Review)</li>
+<li>a series of studies exploring the blame/praise spectrum (Gathering Data)</li>
 </ul>
 <p><br></p>
 </div>
