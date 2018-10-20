@@ -1,0 +1,112 @@
+.navbar{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(225,225,225);
+}
+
+
+.footer{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(225,225,225);
+  position: static;
+  bottom: 0;
+  width: 250%;
+  overflow: hidden;
+  background-color: white;
+  margin-left: -75%;
+}
+
+#footerhead1{
+  position:static;
+  background-color: white;
+  float:left;
+  margin-left: 25%;
+}
+#footerhead2{
+  position:static;
+  background-color: white;
+  float:left;
+  margin-left: 22.25%;
+}
+
+#image_about{
+  margin-left: 23.75%;
+  float:left; 
+  width:8%;
+  clear: both;
+}
+
+#about{
+  float:left; 
+  width:16%;
+}
+
+#where{
+  float:left;
+  margin-left: 2%;
+  width:20%;
+}
+
+#social1{
+  margin-right: 25.5%;
+  float: right;
+}
+#social2{
+  float: right;
+}
+
+a:link {
+    color: rgb(30,100,200);
+}
+
+
+a:visited {
+    color: rgb(30,100,200);
+}
+
+a:hover {
+    color: rgb(251,126,58);
+}
+
+a:active {
+    color: rgb(30,100,200);
+}
+
+.navbar .navbar-nav > li > a:hover {
+  color: rgb(30,100,200);
+}
+
+.navbar .navbar-nav > .active > a ,
+.navbar .navbar-nav > .active > a:hover{
+  color: rgb(30,100,200);
+}
+
+.navbar .navbar-brand:hover{
+  color: rgb(30,100,200);
+}
+
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:focus,
+.navbar .navbar-nav > .open > a:hover{
+  color: rgb(30,100,200);
+  background-color: #FFFFFF;
+}
+
+.navbar .navbar-nav > .open > .dropdown-menu > li > a{
+  color: rgb(0,0,0);
+  background-color: #FFFFFF;
+}
+
+.navbar .navbar-nav > .open > .dropdown-menu > li > a:focus,
+.navbar .navbar-nav > .open > .dropdown-menu > li > a:hover{
+  color: rgb(30,100,200);
+  background-color: #FFFFFF;
+}
+
+blockquote {
+  font-style: italic
+}
+
+
+
